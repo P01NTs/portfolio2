@@ -1,0 +1,20 @@
+.about__container {
+    height: 100vh;
+    text-align: center;
+}
+
+h2 {
+    color: var(--color-primary);
+    margin-bottom: 2rem;
+}
+
+.small-container {
+    display: flex;
+    justify-content: space-around;
+}
+
+.me2 {
+    background: var(--color-primary);
+    width: 20rem;
+    border-radius: 3rem;
+}
