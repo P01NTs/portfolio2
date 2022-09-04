@@ -3,26 +3,39 @@
     display: flex;
     justify-content: space-around;
     align-items: center;
-    bottom: 20px;
+    bottom: 1.25rem;
     left: 50%;
     transform: translate(-50%, -50%);
-    background: #42478074;
-    height: 70px;
-    width: 500px;
-    border-radius: 50px;
-    backdrop-filter: blur(2px);
+    background: var(--color-primary-variant);
+    height: 4.375rem;
+    width: 31.25rem;
+    border-radius: 3.125rem;
+    backdrop-filter: blur(0.125rem);
+    box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
 }
 
-.nav-list li {
+.nav-list li a i {
     font-size: 27px;
     cursor: pointer;
     color: rgba(255, 255, 255, 0.485);
     transition: all 0.3s ease-in-out;
+    text-align: center;
+    background-color: transparent;
+    padding: .8rem;
+    border-radius: 50%;
 }
-.nav-list li:hover{
 
-    color: rgba(255, 255, 255);
+.nav-list li a i:hover {
+    color: white;
+    background: var(--color-bg-variant);
 }
+
+.nav-list li a i.active {
+
+    color: var(--color-bg);
+    background-color: var(--color-light);
+}
+
 @media screen and (max-width: 500px) {
     .nav-list {
         width: 90%;

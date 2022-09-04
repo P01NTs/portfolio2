@@ -9,7 +9,7 @@ import "./index.css";
 
 function App() {
   return (
-    <div id="home" className="nav">
+    <div className="wrapper">
       <Header />
       <About />
       <Skills />

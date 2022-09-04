@@ -1,21 +1,18 @@
-header {
-    height: 100vh;
-    padding-top: 7rem;
-    overflow: hidden;
-}
-
 .header__container {
     text-align: center;
-    height: 100%;
     position: relative;
+    margin-bottom: 3rem;
+    width: var(--container-width-lg);
+    margin: 0 auto;
+    padding-top: 7rem;
+    min-height: 80vh;
 }
-
 
 .cta {
     margin-top: 2.5rem;
     display: flex;
-    gap: 1.2rem;
     justify-content: center;
+    gap: 1.2rem;
 }
 
 .social__container {
@@ -26,6 +23,7 @@ header {
     position: absolute;
     left: 0;
     bottom: 3rem;
+    font-size: 1.5rem;
 }
 
 .social__container::after {
@@ -39,7 +37,7 @@ header {
     background: var(--color-primary);
     background: linear-gradient(var(--color-primary), transparent);
     width: 22rem;
-    margin-top: 4rem;
+    margin-top: 3rem;
     padding-top: 1rem;
     position: absolute;
     left: 50%;

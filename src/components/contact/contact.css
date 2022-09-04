@@ -1,3 +1,50 @@
-.contact__container{
-    height: 100vh;
+.contact__container {
+    height: 100vh !important;
+    width: 50vw !important;
 }
+
+.contact__container {
+    text-align: center;
+}
+
+.contact__wrapper {
+    display: flex;
+}
+
+.contact__links {
+    display: flex;
+    flex-flow: column;
+    gap: 1rem;
+}
+
+.contact__links article {
+    width: max-content;
+    text-align: center;
+    background-color: var(--color-primary-variant);
+    border-radius: 2rem;
+    padding: 1.5rem 1.8rem;
+}
+
+.contact__wrapper div article i {
+    font-size: 1.5rem;
+}
+
+.contact__form {
+    display: flex;
+    flex-flow: column;
+    gap: 2rem;
+    width: 100%;
+    margin-left: 5rem;
+}
+
+.contact__form input[type="text"],
+.contact__form input[type="email"],
+.contact__form textarea {
+    border: 1px solid var(--color-primary-variant);
+    background: transparent;
+    border-radius: .5rem;
+    padding: 1.1rem 1.8rem;
+    font-size: 1.1rem;
+    color: white;
+}
+

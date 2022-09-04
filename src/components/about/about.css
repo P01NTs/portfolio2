@@ -1,5 +1,5 @@
 .about__container {
-    height: 100vh;
+    height: 70vh;
     text-align: center;
 }
 
@@ -9,12 +9,28 @@ h2 {
 }
 
 .small-container {
+    text-align: left;
     display: flex;
-    justify-content: space-around;
+    gap: 3rem;
+
+}
+
+.side-about {
+    justify-content: space-between;
+    flex-flow: column;
+    display: flex;
+}
+
+.side-about p {
+    margin-bottom: .8rem;
+    text-align: justify;
+    text-justify: inter-word;
 }
 
 .me2 {
     background: var(--color-primary);
-    width: 20rem;
     border-radius: 3rem;
+    min-width: 20rem;
+    height: min-content;
+
 }

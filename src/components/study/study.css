@@ -1,3 +1,61 @@
-.study__container{
-    height: 100vh;
+.study__container {
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    text-align: center;
+}
+
+.left {
+    display: flex;
+    flex-flow: column;
+    align-items: flex-end;
+    width: 50%;
+    border-right: 4px solid var(--color-primary);
+}
+
+.right {
+    display: flex;
+    flex-flow: column;
+    width: 50%;
+    align-self: flex-end;
+    border-left: 4px solid var(--color-primary);
+    margin-right: 4px;
+
+}
+
+.left article {
+    text-align: right;
+}
+
+.study__container .left article {
+    padding:1rem 2rem;
+    background-image: url(../../assets/circle-solid-left.svg);
+    background-repeat: no-repeat;
+    background-size: .5rem;
+    background-position-y: center;
+    background-position-x: right;
+    background: rotate(90deg);
+    transition: var(--transition);
+    border-top-left-radius: 2rem;
+    border-end-start-radius: 2rem;
+}
+
+.study__container .right article {
+    padding: 1rem 2rem ;
+    background-image: url(../../assets/circle-solid-right.svg);
+    background-repeat: no-repeat;
+    background-size: .5rem;
+    background-position-y: center;
+    transition: var(--transition);
+    border-top-right-radius: 2rem;
+    border-end-end-radius: 2rem;
+}
+
+.study__container div article{
+    width: 100%;
+}
+
+.study__container div article:hover {
+    background-color: var(--color-primary-variant);
+    cursor: pointer;
 }

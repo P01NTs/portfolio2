@@ -12,11 +12,16 @@
     text-decoration: none;
 }
 
+p,
+button {
+    font-family: poppins;
+}
+
 :root {
     --color-bg: #0c382f;
-    --color-bg-variant: #1f1f38;
+    --color-bg-variant: #0c382f6f;
     --color-primary: #2ED6B3;
-    --color-primary-variant: rgba(77, 181, 255, 0.4);
+    --color-primary-variant: #3be0bf75;
     --color-white: #fff;
     --color-light: rgba(255, 255, 255, 0.6);
 
@@ -42,9 +47,22 @@ body {
 }
 
 /* =================== GENERAL STYLES =================== */
+.wrapper {
+    scroll-snap-type: y mandatory;
+    overflow-y: scroll;
+    scroll-behavior: smooth;
+    height: 100vh;
+}
+
 .container {
     width: var(--container-width-lg);
     margin: 0 auto;
+    padding-top: 7rem;
+    height: 70vh;
+}
+
+.scroll-snap {
+    scroll-snap-align: start;
 }
 
 img {
@@ -91,7 +109,8 @@ a:hover {
 }
 
 .btn {
-    width: max-content;
+    font-size: 16px;
+    max-width: max-content;
     display: inline-block;
     color: var(--color-primary);
     padding: .75rem 1.2rem;
@@ -99,18 +118,25 @@ a:hover {
     cursor: pointer;
     border: 1px solid var(--color-primary);
     transition: var(--transition);
+    background: transparent;
+
 }
 
 .btn:hover {
     background: var(--color-white);
-    color: var(--color-bg) ;
+    color: var(--color-bg);
     border-color: transparent;
 }
 
 .btn-primary {
     background: var(--color-primary);
     color: var(--color-bg) !important;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
 }
+
+
 
 /* =============== MEDIA MEDIUM DEVICE ================= */
 
